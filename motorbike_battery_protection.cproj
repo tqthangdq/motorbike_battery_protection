@@ -120,9 +120,141 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="APP\app.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APP\app.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APP\app_adc2beep.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APP\app_adc2beep.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APP\app_adc2relay.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APP\app_adc2relay.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APP\app_btn2str.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APP\app_btn2str.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APP\app_btn2tm1637.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APP\app_btn2tm1637.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APP\app_led2beep.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APP\app_led2beep.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="CPN\cpn_adc.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="CPN\cpn_adc.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="CPN\cpn_btn.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="CPN\cpn_btn.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="CPN\cpn_led.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="CPN\cpn_led.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="CPN\cpn_sch.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="CPN\cpn_sch.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="CPN\cpn_tm1637.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="CPN\cpn_tm1637.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="CPN\cpn_usart.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="CPN\cpn_usart.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="DRV\drv_adc.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="DRV\drv_adc.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="DRV\drv_pin.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="DRV\drv_pin.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="DRV\drv_sch.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="DRV\drv_sch.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="DRV\drv_tm1637.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="DRV\drv_tm1637.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="DRV\drv_usart.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="DRV\drv_usart.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\hal_adc.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\hal_adc.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\hal_gpio.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\hal_gpio.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\hal_timer0.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\hal_timer0.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\hal_usart.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\hal_usart.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="main.c">
       <SubType>compile</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="HAL" />
+    <Folder Include="CPN" />
+    <Folder Include="DRV" />
+    <Folder Include="APP" />
   </ItemGroup>
   <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
 </Project>
