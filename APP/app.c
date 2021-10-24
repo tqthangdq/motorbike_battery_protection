@@ -33,9 +33,6 @@ void APP_Init(APP_ADC2BEEP_HandlerTypeDef *hAPP_ADC2BEEP,
     /*					STABILIZATION TIME                                  */
     /************************************************************************/
     APP_TaskAttach(hCPN_SCH);
-	
-	/* Avoid the first warning */
-	hCPN_SCH->u8SCH_RunTimeArray[TASK_ADC2BEEP] += (100/SYSTEM_INTERVAL);
 }
 
 void APP_Loop(APP_ADC2BEEP_HandlerTypeDef *hAPP_ADC2BEEP,
